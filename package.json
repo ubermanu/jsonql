@@ -4,11 +4,22 @@
   "description": "A simple, fast, and safe way to query JSON data",
   "license": "MIT",
   "author": "Emmanuel Vodor <manu@paca.happy-dev.fr>",
+  "type": "module",
+  "main": "dist/knuql.cjs",
+  "module": "dist/knuql.mjs",
+  "types": "dist/knuql.d.ts",
   "scripts": {
     "test": "uvu -r tsm test"
   },
   "devDependencies": {
     "tsm": "^2.2.2",
+    "unbuild": "^0.8.11",
     "uvu": "^0.5.6"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/knuql.mjs",
+      "require": "./dist/knuql.cjs"
+    }
   }
 }
