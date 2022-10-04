@@ -11,6 +11,9 @@
   "scripts": {
     "test": "uvu -r tsm test"
   },
+  "dependencies": {
+    "pegjs": "^0.10.0"
+  },
   "devDependencies": {
     "@ubermanu/eslint-config": "^1.2.0",
     "eslint": "^8.24.0",

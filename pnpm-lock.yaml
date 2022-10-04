@@ -3,9 +3,13 @@ lockfileVersion: 5.4
 specifiers:
   '@ubermanu/eslint-config': ^1.2.0
   eslint: ^8.24.0
+  pegjs: ^0.10.0
   tsm: ^2.2.2
   unbuild: ^0.8.11
   uvu: ^0.5.6
+
+dependencies:
+  pegjs: 0.10.0
 
 devDependencies:
   '@ubermanu/eslint-config': 1.2.0_eslint@8.24.0
@@ -2429,6 +2433,12 @@ packages:
   /pathe/0.3.8:
     resolution: {integrity: sha512-c71n61F1skhj/jzZe+fWE9XDoTYjWbUwIKVwFftZ5IOgiX44BVkTkD+/803YDgR50tqeO4eXWxLyVHBLWQAD1g==}
     dev: true
+
+  /pegjs/0.10.0:
+    resolution: {integrity: sha512-qI5+oFNEGi3L5HAxDwN2LA4Gg7irF70Zs25edhjld9QemOgp0CbvMtbFcMvFtEo1OityPrcCzkQFB8JP/hxgow==}
+    engines: {node: '>=0.10'}
+    hasBin: true
+    dev: false
 
   /picocolors/1.0.0:
     resolution: {integrity: sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ==}
