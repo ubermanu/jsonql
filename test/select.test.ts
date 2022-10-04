@@ -62,4 +62,14 @@ test('Select all cars with a year greater than 1970', () => {
   assert.equal(result, [data.cars[1]])
 })
 
+test('Select all car brands', () => {
+  const result = knuql('.cars[].brand', data)
+  assert.equal(result, ['Ford', 'Ford', 'Dodge'])
+})
+
+test('Select all car brands and models', () => {
+  const result = knuql('.cars[].brand, .cars[].model', data)
+  assert.equal(result, ['Ford', 'Mustang', 'Ford', 'F-150', 'Dodge', 'Charger'])
+})
+
 test.run()
