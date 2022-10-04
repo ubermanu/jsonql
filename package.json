@@ -5,6 +5,10 @@
   "license": "MIT",
   "author": "Emmanuel Vodor <manu@paca.happy-dev.fr>",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "uvu -r tsm test"
+  },
+  "devDependencies": {
+    "tsm": "^2.2.2",
+    "uvu": "^0.5.6"
   }
 }
